@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Salão</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu-footer-screen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Grid -->
+    <div class="wrapper-grid screen">
+      <div class="grid-categorias">
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+        <div class="menu-btn">
+          <div class="item-categoria">box1</div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Grid -->
+    <!-- Página Screen do menu-btn depilação -->
+    <div class="category-screen screen">
+      <!-- Ícone Voltar -->
+      <div class="head-wrapper-categoria  ">
+        <div class="back-btn">
+          <i class="fa-solid fa-arrow-left" style="font-size: 25px;"></i>
+        </div>
+      </div>
+
+      <!-- Conteúdo da Página de Depilação -->
+      <div class="reserva-wrapper">
+        <div class="reservas">
+          <div class="reserva-depilacao">
+            <h1>Bem-vindo à minha Página de Depilação</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Fim da Página Screen do menu-btn depilação -->
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-foo">
+      <input type="radio" name="s" id="home">
+      <input type="radio" name="s" id="blog">
+      <input type="radio" name="s" id="code" checked>
+      <input type="radio" name="s" id="help">
+      <input type="radio" name="s" id="about">
+      <nav>
+        <div class="slider"></div>
+        <label class="home" for="home">
+          <i class="fas fa-home"></i>
+        </label>
+        <label class="blog" for="blog">
+          <i class="fas fa-blog"></i>
+        </label>
+        <label class="code" for="code">
+          <i class="fas fa-code"></i>
+        </label>
+        <label class="help" for="help">
+          <i class="fas fa-envelope"></i>
+        </label>
+        <label class="about" for="about">
+          <i class="fas fa-user"></i>
+        </label>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const wrapper = document.querySelector(".wrapper");
+    const backBtn = document.querySelector(".back-btn");
+    const menuBtn = document.querySelector(".menu-btn");
+
+    const toggleScreen = () => {
+      wrapper.classList.toggle("show-category");
+    };
+
+    menuBtn.addEventListener("click", toggleScreen);
+    backBtn.addEventListener("click", toggleScreen);
+  </script>
+</body>
+
+</html>

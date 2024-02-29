@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.container-foo{
+    
+  position: fixed; /* Define o posicionamento fixo */
+  bottom: 20px; /* Define a distância entre o elemento e a borda inferior da janela */
+  left: 50%; /* Opcional: define a posição horizontal do elemento */
+  transform: translateX(-50%); /* Opcional: centraliza o elemento horizontalmente */
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  z-index: 1000;
+}
+/* para dispositivos 350x760*/
+
+@media (min-width:412px) {
+  nav{
+    width: 412px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+
+    
+  }
+  nav label{
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #f74896;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  nav label:hover{
+  background: #f748978e;
+  }
+  nav label i{
+    margin-right: 4px;
+  }
+  nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #f74896;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1;
+  }
+  #home:checked ~ nav label.home,
+  #blog:checked ~ nav label.blog,
+  #code:checked ~ nav label.code,
+  #help:checked ~ nav label.help,
+  #about:checked ~ nav label.about{
+    color: #fff;
+  }
+  #blog:checked ~ nav .slider{
+  left: 20%;
+  }
+  #code:checked ~ nav .slider{
+  left: 40%;
+  }
+  #help:checked ~ nav .slider{
+  left: 60%;
+  }
+  #about:checked ~ nav .slider{
+  left: 80%;
+  }
+  input[type=radio]{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width:428px) {
+  nav{
+    width: 428px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+
+    
+  }
+  nav label{
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #f74896;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  nav label:hover{
+  background: #f748978e;
+  }
+  nav label i{
+    margin-right: 4px;
+  }
+  nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #f74896;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1;
+  }
+  #home:checked ~ nav label.home,
+  #blog:checked ~ nav label.blog,
+  #code:checked ~ nav label.code,
+  #help:checked ~ nav label.help,
+  #about:checked ~ nav label.about{
+    color: #fff;
+  }
+  #blog:checked ~ nav .slider{
+  left: 20%;
+  }
+  #code:checked ~ nav .slider{
+  left: 40%;
+  }
+  #help:checked ~ nav .slider{
+  left: 60%;
+  }
+  #about:checked ~ nav .slider{
+  left: 80%;
+  }
+  input[type=radio]{
+    display: none;
+  }
+}
+
+
+@media (min-width:360px) {
+    nav{
+      width: 360px;
+      height: 60px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      position: relative;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+  
+      
+    }
+    nav label{
+      width: 100%;
+      height: 100%;
+      line-height: 60px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 5px;
+      margin: 0 5px;
+      color: #f74896;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    nav label:hover{
+    background: #f748978e;
+    }
+    nav label i{
+      margin-right: 4px;
+    }
+    nav .slider{
+      position: absolute;
+      height: 100%;
+      width: 20%;
+      background: #f74896;
+      left: 0;
+      top: 0;
+      border-radius: 5px;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 1;
+    }
+    #home:checked ~ nav label.home,
+    #blog:checked ~ nav label.blog,
+    #code:checked ~ nav label.code,
+    #help:checked ~ nav label.help,
+    #about:checked ~ nav label.about{
+      color: #fff;
+    }
+    #blog:checked ~ nav .slider{
+    left: 20%;
+    }
+    #code:checked ~ nav .slider{
+    left: 40%;
+    }
+    #help:checked ~ nav .slider{
+    left: 60%;
+    }
+    #about:checked ~ nav .slider{
+    left: 80%;
+    }
+    input[type=radio]{
+      display: none;
+    }
+  }
+  
+
+  @media (min-width:810px) {
+    nav{
+      width: 810px;
+      height: 60px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      position: relative;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+  
+      
+    }
+    nav label{
+      width: 100%;
+      height: 100%;
+      line-height: 60px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 5px;
+      margin: 0 5px;
+      color: #f74896;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    nav label:hover{
+    background:#f748978e;
+    }
+    nav label i{
+      margin-right: 4px;
+    }
+    nav .slider{
+      position: absolute;
+      height: 100%;
+      width: 20%;
+      background: #f74896;
+      left: 0;
+      top: 0;
+      border-radius: 5px;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 1;
+    }
+    #home:checked ~ nav label.home,
+    #blog:checked ~ nav label.blog,
+    #code:checked ~ nav label.code,
+    #help:checked ~ nav label.help,
+    #about:checked ~ nav label.about{
+      color: #fff;
+    }
+    #blog:checked ~ nav .slider{
+    left: 20%;
+    }
+    #code:checked ~ nav .slider{
+    left: 40%;
+    }
+    #help:checked ~ nav .slider{
+    left: 60%;
+    }
+    #about:checked ~ nav .slider{
+    left: 80%;
+    }
+    input[type=radio]{
+      display: none;
+    }
+  }
+  
+
+
+

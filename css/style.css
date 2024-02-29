@@ -1,0 +1,103 @@
+/* Import da fonte Poppins */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900);
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definições gerais de fonte e estilo */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2e2e2e;
+}
+
+/* Estilos para o cabeçalho */
+
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper .screen {
+  min-width: 100%;
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.fa-user-tie {
+  font-size: 1.3rem;
+  color: #5841ad;
+}
+
+/* Personalização da barra de rolagem */
+.container::-webkit-scrollbar {
+  width: 0;
+}
+
+/** Grid **/
+.wrapper-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.head-wrapper-categoria {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 20px;
+  /* Espaçamento entre os itens */
+  padding-top: 20px;
+}
+
+.grid-categorias .item-categoria {
+  min-width: 95px;
+  height: 90px;
+  background-color: #5841ad;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-screen {
+  color: #5841ad;
+  height: 100%;
+}
+
+.wrapper .wrapper-grid {
+  min-width: 100%;
+  flex: 1;
+  transition: all 0.3s;
+  justify-content: center;
+  /* Adicionado para centralizar os elementos */
+}
+
+.wrapper.show-category .wrapper-grid,
+.wrapper.show-category .category-screen {
+  transform: translateX(-100%);
+}
+
+/* Estilos para o botão de menu */
+.menu-btn {
+  cursor: pointer;
+  color: #fff;
+}
+
+.category-screen {
+  color: #5841ad;
+  height: 100%;
+  /* Definindo altura para manter a posição correta */
+}
