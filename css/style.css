@@ -28,6 +28,8 @@ body {
   min-width: 100%;
   flex: 1;
   transition: all 0.3s;
+  
+  
 }
 
 .fa-user-tie {
@@ -45,12 +47,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  cursor: pointer;
+  
+  
+  
+  
 }
 
 .head-wrapper-categoria {
   padding: 30px;
-  cursor: pointer;
+  
 }
 
 .grid-categorias {
@@ -92,7 +97,7 @@ body {
 
 /* Estilos para o botão de menu */
 .menu-btn {
-  cursor: pointer;
+  
   color: #fff;
 }
 
