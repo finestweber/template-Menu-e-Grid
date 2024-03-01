@@ -105,3 +105,10 @@ body {
   height: 100%;
   /* Definindo altura para manter a posição correta */
 }
+.head-wrapper-categoria {
+  display: flex;
+  align-items: center;
+}
+.h1-cabelo{
+  padding-left: 120px;
+}
