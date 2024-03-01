@@ -65,6 +65,7 @@ body {
   gap: 20px;
   /* Espaçamento entre os itens */
   padding-top: 20px;
+  
 }
 
 .grid-categorias .item-categoria {
@@ -75,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
 }
 
 .category-screen {
