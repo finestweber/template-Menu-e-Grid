@@ -51,7 +51,7 @@ body {
 }
 
 .head-wrapper-categoria {
-  padding: 30px;
+  padding: 10px;
   
 }
 
@@ -111,4 +111,10 @@ body {
 }
 .h1-cabelo{
   padding-left: 120px;
+}
+#linha { 
+  width: 100%; 
+  border-bottom: 
+  1px solid #dcdcdc; 
+  
 }
