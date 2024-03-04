@@ -8,113 +8,161 @@
   box-sizing: border-box;
 }
 
-/* Definições gerais de fonte e estilo */
-body {
-  font-family: "Poppins", sans-serif;
-  color: #2e2e2e;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* Estilos para o cabeçalho */
+@media (min-width:360px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .options {
+    margin: 2px;
+    /* Adicionado para centralizar horizontalmente */
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 90px;
+    gap: 35px;
+    /* Espaçamento entre os itens */
+
+  }
+
+  .option {
+
+    cursor: pointer;
+    /* sombras*/
+    min-width: 110px;
+    height: 113px;
+    background-color: #5841ad;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+  }
+
+  .page {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+
+  }
+
+  #page-cabelo {
+    background-color: lightblue;
 
 
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  height: 100vh;
-  width: 100%;
+  }
+
+  #page-tinta {
+    background-color: lightgreen;
+
+
+  }
+
+  .show-page {
+    display: flex;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
 }
 
-.wrapper .screen {
-  min-width: 100%;
-  flex: 1;
-  transition: all 0.3s;
-  
-  
-}
 
-.fa-user-tie {
-  font-size: 1.3rem;
-  color: #5841ad;
-}
 
-/* Personalização da barra de rolagem */
-.container::-webkit-scrollbar {
-  width: 0;
-}
+@media (min-width:412px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-/** Grid **/
-.wrapper-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-}
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.head-wrapper-categoria {
-  padding: 10px;
-  
-}
+  .options {
+    margin: 12px;
+    /* Adicionado para centralizar horizontalmente */
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 90px;
+    gap: 35px;
+    /* Espaçamento entre os itens */
 
-.grid-categorias {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 110px;
-  gap: 20px;
-  /* Espaçamento entre os itens */
-  padding-top: 20px;
-  
-}
+  }
 
-.grid-categorias .item-categoria {
-  min-width: 118px;
-  height: 113px;
-  background-color: #5841ad;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
-}
+  .option {
 
-.category-screen {
-  color: #5841ad;
-  height: 100%;
-}
+    cursor: pointer;
+    /* sombras*/
+    min-width: 110px;
+    height: 113px;
+    background-color: #5841ad;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
+  }
 
-.wrapper .wrapper-grid {
-  min-width: 100%;
-  flex: 1;
-  transition: all 0.3s;
-  justify-content: center;
-  /* Adicionado para centralizar os elementos */
-}
+  .page {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
 
-.wrapper.show-category .wrapper-grid,
-.wrapper.show-category .category-screen {
-  transform: translateX(-100%);
-}
+  }
 
-/* Estilos para o botão de menu */
-.menu-btn {
-  
-  color: #fff;
-}
+  #page-cabelo {
+    background-color: lightblue;
 
-.category-screen {
-  color: #5841ad;
-  height: 100%;
-  /* Definindo altura para manter a posição correta */
-}
-.head-wrapper-categoria {
-  display: flex;
-  align-items: center;
-}
-.h1-cabelo{
-  padding-left: 120px;
-}
-#linha { 
-  width: 100%; 
-  border-bottom: 
-  1px solid #dcdcdc; 
-  
+
+  }
+
+  #page-tinta {
+    background-color: lightgreen;
+
+
+  }
+
+  .show-page {
+    display: flex;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
 }

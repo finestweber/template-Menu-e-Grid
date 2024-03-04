@@ -14,57 +14,25 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- Grid -->
-    <div class="wrapper-grid screen">
-      <div class="grid-categorias">
-        <div class="menu-btn">
-          <div class="item-categoria">Cabelo</div>
-        </div>
-        <div class="menu-btn">
-          <div class="item-categoria">Tinta</div>
-        </div>
-        <div class="menu-btn">
-          <div class="item-categoria">Progressiva</div>
-        </div>
-        <div class="menu-btn">
-          <div class="item-categoria">Manicure</div>
-        </div>
-        <div class="menu-btn">
-          <div class="item-categoria">Pedicure</div>
-        </div>
-        <div class="menu-btn">
-          <div class="item-categoria">Relaxamento</div>
-        </div>
-
-      </div>
+  <div class="container">
+    <div class="options">
+      <div class="option" id="btn-cabelo">Cabelo</div>
+      <div class="option" id="btn-tinta">Tinta</div>
+      <div class="option" id="btn-tinta">Progressiva</div>
+      <div class="option" id="btn-tinta">Manicure</div>
 
     </div>
-    <!-- Grid -->
-    <!-- Página Screen do menu-btn depilação -->
-    <div class="category-screen screen">
-      <!-- Ícone Voltar -->
-      <div class="head-wrapper-categoria  ">
-        <div class="back-btn">
-          <i class="fa-solid fa-arrow-left" style="font-size: 25px;"></i>
-                <!-- Conteúdo da Página de Cabelo -->
-        </div>
-        <div class="reserva-wrapper">
-        <div class="reservas">
-          <div class="reserva-corte-cabelo">
-               <h1 class="h1-cabelo">Cabelo</h1>
-          </div>
-        </div>
-      </div>
-      <!-- Fim da Página Screen do menu-btn depilação -->
-      </div>
-      
-      <div id="linha"></div>
-
-
+    <div class="page" id="page-cabelo">
+      <h2>Página de Cabelo</h2>
+      <a href="#" class="back-button">&#8592; Voltar</a>
+    </div>
+    <div class="page" id="page-tinta">
+      <h2>Página de Tinta</h2>
+      <a href="#" class="back-button">&#8592; Voltar</a>
     </div>
 
   </div>
+
 
 
   <!-- Footer -->
@@ -97,16 +65,39 @@
   </footer>
 
   <script>
-    const wrapper = document.querySelector(".wrapper");
-    const backBtn = document.querySelector(".back-btn");
-    const menuBtn = document.querySelector(".menu-btn");
+    document.addEventListener('DOMContentLoaded', function () {
+      const btnCabelo = document.getElementById('btn-cabelo');
+      const btnTinta = document.getElementById('btn-tinta');
+      const pageCabelo = document.getElementById('page-cabelo');
+      const pageTinta = document.getElementById('page-tinta');
 
-    const toggleScreen = () => {
-      wrapper.classList.toggle("show-category");
-    };
+      // Adiciona evento de clique para o botão Cabelo
+      btnCabelo.addEventListener('click', function (e) {
+        e.preventDefault();
+        pageCabelo.classList.add('show-page');
+        pageTinta.classList.remove('show-page');
+      });
 
-    menuBtn.addEventListener("click", toggleScreen);
-    backBtn.addEventListener("click", toggleScreen);
+      // Adiciona evento de clique para o botão Tinta
+      btnTinta.addEventListener('click', function (e) {
+        e.preventDefault();
+        pageCabelo.classList.remove('show-page');
+        pageTinta.classList.add('show-page');
+      });
+
+      // Adiciona evento de clique para o botão de voltar na página de Cabelo
+      pageCabelo.querySelector('.back-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        pageCabelo.classList.remove('show-page');
+      });
+
+      // Adiciona evento de clique para o botão de voltar na página de Tinta
+      pageTinta.querySelector('.back-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        pageTinta.classList.remove('show-page');
+      });
+    });
+
   </script>
 </body>
 
