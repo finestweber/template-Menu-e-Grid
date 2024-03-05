@@ -66,13 +66,13 @@ html {
   }
 
   #page-cabelo {
-    background-color: lightblue;
+    background-color: white;
 
 
   }
 
   #page-tinta {
-    background-color: lightgreen;
+    background-color: white;
 
 
   }
@@ -110,17 +110,17 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 90px;
-    gap: 35px;
+    gap: 15px;
     /* Espaçamento entre os itens */
 
   }
 
   .option {
 
-    cursor: pointer;
+    
     /* sombras*/
-    min-width: 110px;
-    height: 113px;
+    min-width: 120px;
+    height: 93px;
     background-color: #5841ad;
     border-radius: 20px;
     display: flex;
@@ -143,13 +143,13 @@ html {
   }
 
   #page-cabelo {
-    background-color: lightblue;
+    background-color: white;
 
 
   }
 
   #page-tinta {
-    background-color: lightgreen;
+    background-color: white;
 
 
   }
@@ -159,10 +159,15 @@ html {
   }
 
   .back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    margin: -20px;
+    padding: 10px;
     font-size: 18px;
-    cursor: pointer;
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    
+    box-shadow: 0 5px 10px rgba(49, 49, 49, 0.25);
   }
 }
