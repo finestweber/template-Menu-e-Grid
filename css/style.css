@@ -14,9 +14,7 @@ html {
   padding: 0;
   overflow-x: hidden;
 }
-.categoria{
-  padding: 20px;
-}
+
 
 @media (min-width:360px) {
   .container {
@@ -26,7 +24,10 @@ html {
     width: 100%;
     overflow: hidden;
   }
-
+.categoria{
+  padding: 20px;
+  margin-top: 30px;
+}
   .options {
     margin: 2px;
     /* Adicionado para centralizar horizontalmente */
@@ -99,7 +100,10 @@ html {
     width: 100%;
     overflow: hidden;
   }
-
+.categoria{
+  padding: 20px;
+  margin-top: 30px;
+}
   .options {
     margin: 12px;
     /* Adicionado para centralizar horizontalmente */
